@@ -4,13 +4,6 @@ var Key = require('./key');
 
 var Organ = React.createClass({
   render: function(){
-    //
-    // var thing = [];
-    // var other = TONES.map(function(key,val){
-    //   thing.push(key);
-    // });
-    //
-    // other();
 
     var organKeys = function(){
       var arr = [];

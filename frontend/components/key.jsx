@@ -26,10 +26,8 @@ var Key = React.createClass({
     KeyStore.addListener(this._keysChanged);
   },
   componentWillUnmount: function(){
-    // var tone = TONES[this.props.noteName];
     this.note.stop();
     KeyStore.removeListener(this._keysChanged);
-    this.show = "";
   },
 
   render: function(){

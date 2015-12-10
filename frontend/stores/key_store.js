@@ -25,7 +25,9 @@ KeyStore.__onDispatch = function(payload) {
 };
 
 var addKeys = function (key) {
-  _keys.push(key);
+  if (_keys.indexOf(key) === -1){
+    _keys.push(key);
+  }
   KeyStore.__emitChange();
 };
 
